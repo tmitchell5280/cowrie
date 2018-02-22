@@ -10,14 +10,13 @@ class command_uname(HoneyPotCommand):
     def call(self):
         if len(self.args) and self.args[0].strip() in ('-a', '--all'):
             self.write(
-                'Linux %s 3.2.0-4-amd64 #1 SMP Debian 3.2.68-1+deb7u1 x86_64 GNU/Linux\n' % \
+                'Linux %s 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux\n' % \
                 self.protocol.hostname)
         elif len(self.args) and self.args[0].strip() in ('-r', '--kernel-release'):
-            self.write( '3.2.0-4-amd64\n' )
+            self.write( '4.4.0-31-generic\n' )
         elif len(self.args) and self.args[0].strip() in ('-m', '--machine'):
-            self.write( 'amd64\n' )
+            self.write( 'x86_64\n' )
         else:
             self.write('Linux\n')
 
 commands['/bin/uname'] = command_uname
-
