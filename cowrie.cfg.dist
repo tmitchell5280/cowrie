@@ -228,7 +228,7 @@ dsa_private_key = etc/ssh_host_dsa_key
 # SSH-2.0-OpenSSH_5.9
 #
 # (default: "SSH-2.0-SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2")
-version = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
+version = SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.7
 
 
 # IP addresses to listen for incoming SSH connections.
